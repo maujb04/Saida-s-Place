@@ -57,14 +57,14 @@ section form input{
     padding: 0.8em;
     border-radius: 9px;
     border: none;
-    outline-color: #003DFF;
+    outline-color: #f3f5fd;
     background-color: #eee;
 }
 
 section form input[type='submit']{
     cursor: pointer;
     margin-top: 1.5em;
-    background-color: #003DFF;
+    background-color: #a6a9b4;
     color: #fff;
     font-family: var(--font-mono);
     transition: var(--transition);
@@ -82,7 +82,7 @@ section p{
 
 section p a{
     text-decoration: none;
-    color: #ff0000;
+    color: #8d7070;
 }
 
 
@@ -94,7 +94,7 @@ section form {
     flex-wrap: wrap;
     max-width: 500px;
     border-radius: 10px;
-    border: 2px solid #db241b;
+    border: 2px solid #bd9f9e;
     background-color: #080202;
 }
 
@@ -112,8 +112,8 @@ section form textarea {
     margin-bottom: 1em;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #db241b;
-    outline-color: #db241b;
+    border: 1px solid #e2c1bf;
+    outline-color: #b19493;
     background-color: #ffffff;
     color: #000000;
 }
