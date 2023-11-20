@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta hhtp-equiv="X-UA-Compatible" content="ie=edge">
     <title>Saida's Place</title>
-    <link rel="shortcut icon" href="Nueva carpeta/saida.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/saida.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css"
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -17,7 +17,8 @@
             <a href="#Sobre nosotros">Acerca de</a>   
             <a href="#Nuestro servicio">Servicios</a>
             <a href="#Contacto">Contacto</a>
-            <a href='login.html' target="_blank">Inicio sesión</a>
+            <a id="logout" href="#" class="logout-button">Salir</a>
+
         </nav>
         <section class="textos-header" id="Inicio">
             <h1>Saida's Place</h1>
@@ -106,5 +107,17 @@
         </div>
         <h2 class="titulo-final">&copy; Saida's Place | Sarai Iguaran</h2>
     </footer>
+<script>
+    const user = JSON.parse(localStorage.getItem('login_success')) || false
+    if(!user){
+    window.location.href = 'login.html'
+    }
+    const logout = document.querySelector('#logout')
+    .addEventListener('click', ()=>{
+    alert('Hasta pronto!')
+    localStorage.removeItem('login_success')
+    window.location.href = 'login.html'
+    })
+</script>
 </body>
 </html>
