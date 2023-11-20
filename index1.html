@@ -4,44 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos1.css">
-    <title>Registro de Usuarios</title>
+    <title>FORMULARIO</title>
     
 </head>
 <body>
-    <div class="Container">
-        <h2>Registro de Usuarios</h2>
-        <form action="registrar.php" method="post">
-            <label for="username">Nombre de usuario:</label>
-            <input type="text" name="username" required><br>
-            
-            <label for="password">Contraseña:</label>
-            <input type="password" name="password" required><br>
-            
-            <label for="email">Correo electrónico:</label>
-            <input type="email" name="email" required><br>
-            
-            <a class="CuentaOK"> ¿Ya tienes una cuenta? </a><br>
-            
-            <input type="submit" value="Registrarse">
+    <div class="container">
+        <div class="form sing-up-container">
+        <h1>Registrarse</h1>
+        <form class="formulario">
+            <input type="text" placeholder="Nombre" id="name">
+            <input type="email" placeholder="Email" id="email">
+            <input type="password" placeholder="Contraseña" id="password">
+            <a class="ok-account"> ¿Ya tienes una cuenta?</a>
+            <input type="submit" value="Registrase">
         </form>
+        </div>
+        <div class="form sing-up-container">
+            <h2>Iniciar sesión</h2>
+            <form class="formulario2">
+                <input type="email" placeholder="Email" id="email2">
+                <input type="password" placeholder="Contraseña" id="password2">
+                <a class="no-account"> ¿Aún no tienes cuenta?</a>
+                <input type="submit" value="Iniciar sesión">
+            </form>
+        </div>
     </div>
-    
-    <div class="Inicio">
-        <h2>Iniciar Sesion</h2>
-        <form action="Inicio.php" method="post">
-
-            <label for="email">Correo electrónico:</label>
-            <input type="email" name="email" required><br>
-            
-            <label for="password">Contraseña:</label>
-            <input type="password" name="password2" required><br>
-                
-            
-            <a class="CuentaNo"> ¿No tienes cuenta aún? </a><br>
-            
-            <input type="submit" value="Iniciar Sesion">
-        </form>
-    </div>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
