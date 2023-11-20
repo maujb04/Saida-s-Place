@@ -101,17 +101,17 @@
         </div>
         <h2 class="titulo-final">&copy; Saida's Place | Sarai Iguaran</h2>
     </footer>
-    <script>
-        const user = JSON.parse(localStorage.getItem('login_success')) || false
-        if(!user){
-        window.location.href = 'login.html'
-        }
-        const logout = document.querySelector('#logout')
-        .addEventListener('click', ()=>{
-        alert('Hasta pronto!')
-        localStorage.removeItem('login_success')
-        window.location.href = 'login.html'
-        })
-        </script>
+<script>
+    const user = JSON.parse(localStorage.getItem('login_success')) || false
+    if(!user){
+    window.location.href = 'login.html'
+    }
+    const logout = document.querySelector('#logout')
+    .addEventListener('click', ()=>{
+    alert('Hasta pronto!')
+    localStorage.removeItem('login_success')
+    window.location.href = 'login.html'
+    })
+</script>
 </body>
 </html>
