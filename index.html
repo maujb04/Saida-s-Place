@@ -17,6 +17,7 @@
             <a href="#Sobre nosotros">Acerca de</a>   
             <a href="#Nuestro servicio">Servicios</a>
             <a href="#Contacto">Contacto</a>
+            <a href='login.html' target="_blank">Inicio sesión</a>
         </nav>
         <section class="textos-header" id="Inicio">
             <h1>Saida's Place</h1>
@@ -61,10 +62,14 @@
                             <p>Bandana ajustable, para que tu pelo este hermoso y siempre peinado</p>
                             <p>Precio: $ 22.000 </p>
                         </div>
-            <a href="https://wa.me/3164849121/?text=Hola,%20me%20interesa%20comprar%20el%20producto%20Nombre%20del%20Producto.%20¿Podrías%20proporcionarme%20más%20información?" target="_blank">Comprar ahora</a>
                         </div>
                     </div>
                 </div>
+                <section class="comprar">
+                    <div class="comprar-ahora">
+                    <a href="https://wa.me/3164849121/?text=Hola,%20me%20interesa%20comprar%20el%20producto%20Nombre%20del%20Producto.%20¿Podrías%20proporcionarme%20más%20información?" target="_blank">Comprar ahora</a>
+                </div>
+                </section>
             </section>
               <section class="clientes contenedor">
                 <h2 class="titulo">Que dicen nuestros clientes</h2>
@@ -101,17 +106,5 @@
         </div>
         <h2 class="titulo-final">&copy; Saida's Place | Sarai Iguaran</h2>
     </footer>
-<script>
-    const user = JSON.parse(localStorage.getItem('login_success')) || false
-    if(!user){
-    window.location.href = 'login.html'
-    }
-    const logout = document.querySelector('#logout')
-    .addEventListener('click', ()=>{
-    alert('Hasta pronto!')
-    localStorage.removeItem('login_success')
-    window.location.href = 'login.html'
-    })
-</script>
 </body>
 </html>
